@@ -1,0 +1,96 @@
+
+#page-home{
+    height: 100vh;
+    background: url(../Assets/icones/home-background.svg) no-repeat;
+    background-position: 35vw bottom;
+}
+
+.content{
+    height: 100%;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+header span{
+    margin-right: 10px;
+    background-image: url('../Assets/log-in.svg');
+    height: 20px;
+    width: 20px;
+}
+
+main{
+    max-width: 560px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 54px;
+}
+
+main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin: 24px 0;
+}
+
+main a{
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    transition: background 500ms;
+    font-size: 20px;
+    margin-top: 16px;
+    display: flex;
+}
+
+
+main a:hover{
+    background: #2fb86e;
+}
+
+main a span{
+    height: 72px;
+    width: 72px;
+    background-color: #00000011;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main a span::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: url('../Assets/search.svg');
+}
+
+main a strong{
+    color: white;
+    flex: 1;
+    text-align: center;
+}
