@@ -3,7 +3,7 @@
         background-position-x: 70vw;
     }
 
-    .content{
+    #page-home .content{
         align-items: center;
         text-align: center;
     }
@@ -20,6 +20,16 @@
 
     main h1{
         font-size: 36px;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
     }
 }
 

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
     <link rel="stylesheet" href="/styles/responsive.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
             <main>
                 <h1>Seu marketplace de coleta de resíduos</h1>
                 <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
-                <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+                <a href="#" id="search-button"><span></span><strong>Pesquisar pontos de coleta</strong></a>
             </main>
             
 
@@ -31,6 +32,30 @@
         </div>
 
     </div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+
+            <div class="header">
+                <h1>Pontos de coleta</h1>
+                <a href="#">fechar</a>
+            </div>
+
+            <form action="/search-results.html">
+                <label for="search">Cidade</label>
+                <div class="search-field">
+                    <input placeholder="Pesquise por cidade" type="text" name="search">
+                    <button>
+                        <img src="Assets/search.svg" alt="">
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
     
+    <script src="/scripts/modal.js"></script>
+
 </body>
 </html>
