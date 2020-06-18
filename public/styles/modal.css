@@ -7,10 +7,25 @@
     background-color: #0e0a14ef;
 }
 
+#modal.point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #modal .content{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#modal .content.point{
+    flex-direction: column;
+}
+
+#modal .content.point h1{
+    color: white;
+    margin-top: 24px;
 }
 
 #modal .content .header{
